@@ -18,15 +18,15 @@
             <div class="container">
 
                 <ol class="breadcrumb" style="margin-bottom: -10px;">
-                    <li class="breadcrumb-item"><a href="/admin/manage">Team name</a></li>
-                    <li class="breadcrumb-item active">Team Wallet</li>
+                    <li class="breadcrumb-item"><a href="/admin/managecompany">Company name</a></li>
+                    <li class="breadcrumb-item active">Company Wallet</li>
                 </ol>
 
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-6">
                         <div class="page-title-box">
-                            <h4 class="page-title">Team Wallet</h4>
+                            <h4 class="page-title">Company Wallet</h4>
                         </div>
                     </div>
                     <div class="col-6">
@@ -38,23 +38,43 @@
                 
                 <div class="row">
                     <div class="col-lg-8 col-xl-8">
+
                         <div class="card-box">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="page-title-box">
-                                        <h4 class="header-title mb-3 mt-1">Credit History</h4>
-                                    </div>
-                                </div>
+                            <ul class="nav nav-tabs nav-bordered nav-justified">
+                                <li class="nav-item d-none d-lg-block">
+                                    <a href="#aboutme1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                        History
+                                    </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#aboutme" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        Requests
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#timeline" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        Allocated to managers
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="aboutme1">
+                                   <!-- start page title -->
+                                        <div class="row">
+                                            
 
-                                <div class="col-6">
-                                    <div class="page-title-box">
-                                        <a href="#" class="btn btn-light float-right mb-3">Download report</a>
-                                    </div>
-                                </div>
+                                            <div class="col-12">
+                                                <div class="page-title-box">
+                                                    <a href="#" class="btn btn-light float-right mb-3">Download report</a>
+                                                </div>
+                                            </div>
 
-                            </div>
+                                        </div>
+                                        
 
-                            <div class="table-responsive">
+                                    <div class="row">
+
+                                        <div class="table-responsive">
                                 <table class="table mb-0">
                                     <thead>
                                     <tr>
@@ -98,13 +118,478 @@
 
                                     </tbody>
                                 </table>
+
                             </div>
                         </div>
+                            
+
+
+                                    
+
+                                    
+
+                                </div> <!-- end tab-pane -->
+                                <!-- end about me section content -->
+
+                                <div class="tab-pane" id="aboutme">
+
+
+                               <div class="row">
+                                        <div class="col-12">
+
+                                            
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h3 class="mb-4 text-center"> Reward</h3>
+
+                                                <form>
+                                                    <div id="basicwizard">
+
+                                                        <ul class="nav nav-tabs nav-bordered nav-justified form-wizard-header mb-2">
+                                                            <li class="nav-item">
+                                                                <a href="#basictab4" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active"> 
+                                                                    <span class="d-none d-sm-inline">Step 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab5" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Step 2</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab6" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Step 3</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content b-0 mb-0">
+                                                            <div class="tab-pane active" id="basictab4">
+                                                                <h4 class="mt-2 mb-4 text-center">What is the reward for?</h4>
+
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        
+
+
+                                                                            <div class="form-group mb-3">
+                                                                                <label for="example-textarea">What for?</label>
+                                                                                <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                                            </div>
+
+                                                                            <div class="form-group mb-3">
+                                                                                <label for="example-select">What company value are they embodying?</label>
+                                                                                <select class="form-control" id="example-select">
+                                                                                    <option>Value 1</option>
+                                                                                    <option>Value 2</option>
+                                                                                    <option>Value 3</option>
+                                                                                    <option>value 4</option>
+                                                                                    <option>Value 5</option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                        
+                                                                        <ul class="list-inline wizard mt-2 mb-0">
+                                                                    <li class="previous list-inline-item disabled">
+                                                                       
+                                                                    </li>
+                                                                    <li class="next list-inline-item float-right">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Next</a>
+                                                                    </li>
+                                                                </ul>
+                                                                    </div> <!-- end col -->
+                                                                </div>
+                                                                
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab5">
+                                                                <h4 class="mt-2 mb-4 text-center">What reward would you like to send?</h4>
+                                                                <div class="row mt-0">
+                                                                    <div class="col-4">
+                                                                        <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">Create<br></h5>
+                                                                                    <p class="text-muted mb-1 small">Unique gift from scratch</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                    <div class="col-4">
+                                                                       <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">
+                                                                                    Credit</h5>
+                                                                                    <p class="text-muted mb-1 small">Purchase or send credit</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                    <div class="col-4">
+                                                                        <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">Collections</h5>
+                                                                                    <p class="text-muted mb-1 small">Choose from collections</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+                                                                <ul class="list-inline wizard mt-2 mb-0">
+                                                                    <li class="previous list-inline-item disabled">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Previous</a>
+                                                                    </li>
+                                                                    <li class="next list-inline-item float-right">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Skip</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab6">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="text-center">
+                                                                           <h4 class="mt-2 mb-4 text-center">Here's your summary</h4>
+
+
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"Great job with the presentation the other day. You rocked!"</i></p>
+
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center">
+
+                                                                           
+                                                                                <div class="col-sm-6">
+                                            <div class="radio radio-primary mb-2">
+                                                <input type="radio" name="radio" id="radio1" value="option1" checked="">
+                                                <label for="radio1">
+                                                    Send reward privately
+                                                </label>
+                                            </div>
+
+                                            <div class="radio radio-primary mb-2">
+                                                <input type="radio" name="radio" id="radio3" value="option3">
+                                                <label for="radio3">
+                                                    Publish message to the hub
+                                                </label>
+                                            </div>
+                                            
+
+                                        </div> 
+
+                                                                       
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center mt-2">
+                                                                            <button type="button" class="btn btn-warning text-center">
+                                                                              Submit recognition
+                                                                            </button>
+                                                                        </div>
+
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+                                                            </div>
+
+                                                        </div> <!-- tab-content -->
+                                                    </div></form> <!-- end #basicwizard-->
+                                                
+
+                                            </div> <!-- end card-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h3 class="mb-4 text-center"> Gift</h3>
+
+                                                <form>
+                                                    <div id="basicwizard">
+
+                                                        <ul class="nav nav-tabs nav-bordered nav-justified form-wizard-header mb-2">
+                                                            <li class="nav-item">
+                                                                <a href="#basictab1" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active"> 
+                                                                    <span class="d-none d-sm-inline">Step 1</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab2" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Step 2</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab3" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Step 3</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content b-0 mb-0">
+                                                            <div class="tab-pane active" id="basictab1">
+                                                                <div class="row mt-0">
+                                                                    <div class="col-4">
+                                                                        <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">Create<br></h5>
+                                                                                    <p class="text-muted mb-1 small">Unique gift from scratch</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                    <div class="col-4">
+                                                                       <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">
+                                                                                    Credit</h5>
+                                                                                    <p class="text-muted mb-1 small">Purchase or send credit</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                    <div class="col-4">
+                                                                        <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h5 class="text-dark my-1">Collections</h5>
+                                                                                    <p class="text-muted mb-1 small">Choose from collections</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab2">
+                                                                <h4 class="mt-2 mb-4 text-center">Add a message?</h4>
+                                                                <div class="row mt-0">
+                                                                    <div class="col-12">
+                                                                        <textarea id="" class="form-control" rows="4" placeholder="Your message has a limit of 400 characters."></textarea>
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+
+                                                                <div class="form-group mb-3 mt-3">
+                                                                                <label for="example-select">What company value is this supporting?</label>
+                                                                                <select class="form-control" id="example-select">
+                                                                                    <option>Value 1</option>
+                                                                                    <option>Value 2</option>
+                                                                                    <option>Value 3</option>
+                                                                                    <option>value 4</option>
+                                                                                    <option>Value 5</option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                <ul class="list-inline wizard mt-2 mb-0">
+                                                                    <li class="previous list-inline-item disabled">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Previous</a>
+                                                                    </li>
+                                                                    <li class="next list-inline-item float-right">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Next</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab3">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="text-center">
+                                                                            <h4 class="mt-2 mb-4 text-center">Here's your summary</h4>
+
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"Here's a message that has been created to accompany the gift. The why etc"</i></p>
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center">
+
+                                                                            <div class="mb-3">
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                                    <label class="custom-control-label" for="customCheck1"> Send message privately</label>
+                                                                                </div>
+                                                                                <div class="custom-control custom-checkbox mt-2">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                                    <label class="custom-control-label" for="customCheck2"> Publish message to the hub</label>
+                                                                                </div>
+                                                                            
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center">
+                                                                            <button type="button" class="btn btn-warning text-center" disabled="">
+                                                                              Submit feedback
+                                                                            </button>
+                                                                        </div>
+
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+                                                            </div>
+
+                                                        </div> <!-- tab-content -->
+                                                    </div> <!-- end #basicwizard-->
+                                                </form>
+
+                                            </div> <!-- end card-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                                <div id="cardCollpase4" class="collapse pt-1 show">
+                                    <p>See who's requested credit to approve or reject</p>
+                                </div> <!-- end collapse-->
+
+                                    
+
+                                
+                                
+
+                                </div> <!-- end tab-pane -->
+                                <!-- end about me section content -->
+
+                                <div class="tab-pane" id="timeline">
+
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            
+
+                                            
+
+                                        </div>
+                                    </div>
+
+
+                                    <p>See how much credit is allocated to all team managers</p>
+
+                                </div>
+                                <!-- end timeline content-->
+
+                                <div class="tab-pane" id="settings">
+                                    <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+
+
+
+
+                                            <div class="btn-group mb-3 float-right">
+                                                <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Gift</a>
+                                                    <a class="dropdown-item" href="#">Reward</a>
+                                                    <a class="dropdown-item" href="#">Incentive</a>
+                                                </div>
+                                            </div>
+                                            <a href="javascript: void(0);" class="btn btn-light float-right mb-3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Team shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                        </div>
+
+                                            <div class="row">
+
+                                            <div class="col-sm-12 col-lg-4 mb-3" data-isotope-item="" data-category="Branding">
+                                                <a href="/admin/asosr">
+                                                  <img src="/template-assets/images/products/asos.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
+                                                  <div class="media mt-3">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <div class="media-body">
+                                                          <h5 class="m-0">£50 Asos Giftcard</h5>
+                                                          <p class="mt-1 text-muted small"><i class="fe-award"></i> Rewarded by Paul Schulz</p>
+                                                      </div>
+                                                  </div>
+                                                </a>
+                                              </div>
+
+                                             
+
+                                             <div class="col-sm-12 col-lg-4 mb-4" data-isotope-item="" data-category="Branding">
+                                                <a href="#">
+                                                  <img src="/template-assets/images/products/50credits.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
+                                                  <div class="media mt-3">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <div class="media-body">
+                                                          <h5 class="m-0">50 Credits</h5>
+                                                          <p class="mt-1 text-muted small">Gifted by Paul Schulz</p>
+                                                      </div>
+                                                  </div>
+                                                </a>
+                                              </div>
+
+
+                                              <div class="col-sm-12 col-lg-4 mb-4" data-isotope-item="" data-category="Branding">
+                                                <a href="#">
+                                                  <img src="/template-assets/images/products/teamlunch.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
+                                                  <div class="media mt-3">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <div class="media-body">
+                                                          <h5 class="m-0">Team Lunch</h5>
+                                                          <p class="mt-1 text-muted small"><i class="fe-lock"></i> Incentive from Paul Schulz</p>
+                                                      </div>
+                                                  </div>
+                                                </a>
+                                              </div>
+
+                                              <div class="col-sm-12 col-lg-4 mb-4" data-isotope-item="" data-category="Branding">
+                                                <a href="/admin/starts">
+                                                  <img src="/template-assets/images/products/1030starts.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
+                                                  <div class="media mt-3">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <div class="media-body">
+                                                          <h5 class="m-0">10:30 starts</h5>
+                                                          <p class="mt-1 text-muted small">Gifted by Paul Schulz</p>
+                                                      </div>
+                                                  </div>
+                                                </a>
+                                              </div>
+
+                                            </div>
+
+                                            </div>
+
+                                            </div>
+
+                                                </div> <!-- end tab-content -->
+                                            </div> <!-- end card-box-->
+                                        </div>
+                        
                     </div>
                     <div class="col-lg-4 col-xl-4">
                         <div class="card-box">
 
-                            <h4 class="mb-4 text-center ">Your Total Credit</h4>
+                            <h4 class="mb-4 text-center ">Your Total Company Credit</h4>
                             <h3 class="text-center mt-3 mb-4" ><a href="javascript: void(0);" aria-controls="collapseOne1" class="text-dark"><i class="fa fa-diamond" aria-hidden="true"></i> 3000 </a></h3>
 
                             <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" class="row">
@@ -162,9 +647,7 @@
 
                             </div>
                             
-                            <ul class="social-list list-inline mt-2 mb-0 text-center">
-                                <a href="#" class="btn btn-warning">Request more Credit</a>
-                            </ul>
+                            
 
                             <ul class="social-list list-inline mt-2 mb-0 text-center">
                                 <a href="/admin/creditteam" class="btn btn-light">Purchase Credit</a>

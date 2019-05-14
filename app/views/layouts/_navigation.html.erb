@@ -16,20 +16,20 @@
                 <!-- End mobile menu toggle-->
             </li>
 
-             <% if current_pages?(%w(manage insights profilemanager walletteam editteam)) %>
+             <% if current_pages?(%w(manage managecompany insights profilemanager walletteam editteam)) %>
 
 
                         <li class="dropdown d-none d-lg-block">
-                            <a class="btn btn-light mt-2 active" href="/admin/manage" role="button" aria-haspopup="false" aria-expanded="false">
-                                Manage team
+                            <a class="btn btn-light mt-2 active" href="/admin/managecompany" role="button" aria-haspopup="false" aria-expanded="false">
+                                Manage company
                             </a>
                         </li>
 
                          <% else %>
 
                          <li class="dropdown d-none d-lg-block">
-                            <a class="btn btn-light mt-2" href="/admin/manage" role="button" aria-haspopup="false" aria-expanded="false">
-                                Manage team
+                            <a class="btn btn-light mt-2" href="/admin/managecompany" role="button" aria-haspopup="false" aria-expanded="false">
+                                Manage company
                             </a>
                         </li>
 
@@ -125,9 +125,9 @@
 
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="/template-assets/images/users/paul.jpg" alt="user-image" class="rounded-circle">
+                    <img src="/template-assets/images/users/louise.jpg" alt="user-image" class="rounded-circle">
                     <span class="pro-user-name ml-1">
-                        Paul Schulz <i class="mdi mdi-chevron-down"></i> 
+                        Louise Jones <i class="mdi mdi-chevron-down"></i> 
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-profile dropdown-menu-right dropdown-xl">
@@ -246,7 +246,7 @@
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
 
-                <% if current_pages?(%w(everyday learning health asos amazon audible tesco apple adidas netflix company collections)) %>
+                <% if current_pages?(%w(everyday learning health asos amazon audible tesco apple adidas netflix company collections manageextras)) %>
                     <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         Collections
                         <i class="mdi mdi-chevron-down"></i> 
@@ -264,7 +264,10 @@
                             <div class="row">
 
                                 <div class="col-md-3">
-                                    <h5 class="text-dark mt-0">Company Extras</h5>
+                                    <h5 class="text-dark mt-0">Company Extras <a class="btn btn-link btn-xs" href="/admin/manageextras" role="button" aria-haspopup="false" aria-expanded="false">
+                                         <i class="mdi mdi-square-edit-outline"></i>
+                                    </a></h5>
+
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="/admin/company">View All</a>
@@ -273,7 +276,9 @@
                                 </div>
 
                                 <div class="col-md-3">
-                                    <h5 class="text-dark mt-0">Everyday Offers</h5>
+                                    <h5 class="text-dark mt-0">Everyday Offers <a class="btn btn-link btn-xs" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                         <i class="mdi mdi-square-edit-outline"></i>
+                                    </a></h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="/admin/everyday">View All</a>
@@ -291,7 +296,9 @@
                                 </div>
     
                                 <div class="col-md-3">
-                                    <h5 class="text-dark mt-0">Learning & Development</h5>
+                                    <h5 class="text-dark mt-0">Learning & Development <a class="btn btn-link btn-xs" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                         <i class="mdi mdi-square-edit-outline"></i>
+                                    </a></h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="/admin/learning">View All</a>
@@ -312,7 +319,9 @@
                                 </div>
     
                                 <div class="col-md-3">
-                                    <h5 class="text-dark mt-0">Health & Support</h5>
+                                    <h5 class="text-dark mt-0">Health & Support <a class="btn btn-link btn-xs" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                         <i class="mdi mdi-square-edit-outline"></i>
+                                    </a></h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="/admin/health">View All</a>

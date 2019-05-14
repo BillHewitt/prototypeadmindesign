@@ -6,16 +6,11 @@
 <div class="wrapper">
             <div class="container">
 
-                <ol class="breadcrumb" style="margin-bottom: -10px;">
-                    <li class="breadcrumb-item"><a href="/admin/managecompany">Company name</a></li>
-                    <li class="breadcrumb-item active">Team Name</li>
-                </ol>
-
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box">
-                            <h4 class="page-title">Team name</h4>
+                            <h4 class="page-title">Company name</h4>
                         </div>
                     </div>
                 </div>
@@ -38,12 +33,12 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#timeline" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                        Sub teams
+                                        Teams
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
-                                        Give team
+                                        Give company
                                     </a>
                                 </li>
                             </ul>
@@ -65,11 +60,11 @@
                                     <div class="row">
 
                                     <div class="col-md-6">
-                                        <a href="#" class="card p-3 outline">
+                                        <a href="/admin/insights" class="card p-3 outline">
 
 
                                                             <div class="text-center">
-                                                                <h4>Team Engagement score</h4>
+                                                                <h4>Company Engagement score</h4>
                                                             </div>
 
                                                             <div id="g1" class="gauge-chart"></div>
@@ -126,7 +121,7 @@
                                     <div class="col-lg-6">
                                         <a href="#" class="card p-3 outline">
                                             <div class="text-center mb-3">
-                                                <h4 class="mb-2">Team interests</h4>
+                                                <h4 class="mb-2">Company interests</h4>
                                             </div>
 
                                             <h5 class="mt-0">Sport <span class="text-muted float-right">70%</span></h5>
@@ -155,7 +150,7 @@
                                         <a href="#" class="card p-3 outline">
 
                                             <div class="text-center mb-3">
-                                                                <h4 class="mb-2">Team Activity</h4>
+                                                                <h4 class="mb-2">Company Activity</h4>
                                                             </div>
 
 
@@ -444,7 +439,7 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h3 class="mb-4 text-center"> Gift</h3>
+                                                <h3 class="mb-4 text-center"> Benefit</h3>
 
                                                 <form>
                                                     <div id="basicwizard">
@@ -476,7 +471,7 @@
                                                                             <div class="col-12">
                                                                                 <div class="text-center">
                                                                                     <h5 class="text-dark my-1">Create<br></h5>
-                                                                                    <p class="text-muted mb-1 small">Unique gift from scratch</p>
+                                                                                    <p class="text-muted mb-1 small">Unique benefit from scratch</p>
                                                                                 </div>
                                                                             </div>
                                                                           </div> <!-- end row-->
@@ -547,7 +542,7 @@
                                                                         <div class="text-center">
                                                                             <h4 class="mt-2 mb-4 text-center">Here's your summary</h4>
 
-                                                                            <p class="w-75 mb-4 mx-auto"><i>"Here's a message that has been created to accompany the gift. The why etc"</i></p>
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"Here's a message that has been created to accompany the benefit. The why etc"</i></p>
                                                                         </div>
 
                                                                         <div class="row justify-content-md-center">
@@ -598,131 +593,191 @@
                                                             <label class="custom-control-label" for="customCheck10"></label>
                                                         </div>
                                                     </th>
+                                                    <th></th>
                                                     <th>Name</th>
+                                                    <th>Team</th>
                                                     <th>Values</th>
                                                     <th>Credit</th>
-                                                    
+                                                    <th>Action</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-5.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Adam Smith</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="/admin/profilemanager" class="small">Adam Smith</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Benefit</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
                                                                 <a class="dropdown-item" href="#">Incentive</a>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                                                            <label class="custom-control-label" for="customCheck13"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Bill Hewitt</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Learning & Development</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
-                                                            </div>
-                                                        </div>
 
-                                                    </td>
-                                                    
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                            <label class="custom-control-label" for="customCheck4"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td><img src="/template-assets/images/users/user-3.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Chris Camacho</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
-                                                        <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
-                                                            </div>
-                                                        </div>
 
-                                                    </td>
-                                                    
-                                                </tr>
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                            <label class="custom-control-label" for="customCheck5"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-8.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Emily Jane</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/bill.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Bill Hewitt</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Benefit</a>
                                                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
                                                                 <a class="dropdown-item" href="#">Incentive</a>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                    
+
                                                 </tr>
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                            <label class="custom-control-label" for="customCheck6"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-2.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Hannah Smith</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Chris Camacho</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
                                                             <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Benefit</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
                                                                 <a class="dropdown-item" href="#">Incentive</a>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                   
+
+                                                </tr>
+                                                
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-1.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="small">Emily Jane</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Benefit</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
+                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+                                                
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="small">Hannah Smith</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Benefit</a>
+                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
+                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
+
                                                 </tr>
 
                                             </tbody>
@@ -740,21 +795,152 @@
 
                                 <div class="tab-pane" id="timeline">
 
-                                    <div class="row">
+                                     <div class="row">
                                         <div class="col-12">
 
-                                            
+                                            <div class="btn-group mb-2">
+                                                <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A - Z <i class="mdi mdi-chevron-down"></i></button>
+                                                <div class="dropdown-menu">
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="btn-group mb-2">
+                                               
+                                                <div class="dropdown-menu">
+                                                    
+                                                </div>
+                                            </div>
+
 
                                             <div class="btn-group mb-2 float-right">
-                                                <button type="button" class="btn btn-light small btn-sm float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create subteam </button>
+                                                <button type="button" class="btn btn-light small btn-sm float-right">Create new team </button>
                                                 
                                             </div>
 
                                         </div>
                                     </div>
 
+                                    <div class="row">
+                                        <div class="col-12">
 
-                                    <p>You haven't created any subteams yet</p>
+                                            
+
+                                            <div class="table-responsive">
+                                        <table class="table table-centered table-borderless mb-0">
+                                            <thead class="thead-white">
+                                                <tr>
+                                                    <th>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                                            <label class="custom-control-label" for="customCheck10"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th >Team</th>
+                                                    <th >Manager</th>
+                                                    <th >Values</th>
+                                                    <th >Engagement</th>
+                                                    <th>Unused Credit</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="small"><a href="/admin/manage">HR Team</a></td>
+                                                    <td class="small">Manager name</td>
+                                                    
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Team Value 1</span></td></td>
+
+                                                    <td class="small">3.4/5</td>
+                                                    
+                                                    
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="small"><a href="#">Product Team</a></td>
+                                                    <td class="small">Manager name</td>
+                                                    
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Team Value 1</span></td></td>
+
+                                                    <td class="small">3.4/5</td>
+                                                    
+                                                    
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="small"><a href="#">Marketing Team</a></td>
+                                                    <td class="small">Manager name</td>
+                                                    
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Team Value 1</span></td></td>
+
+                                                    <td class="small">3.4/5</td>
+                                                    
+                                                    
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="small"><a href="#">AM Team</a></td>
+                                                    <td class="small">Manager name</td>
+                                                    
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Team Value 1</span></td></td>
+
+                                                    <td class="small">3.4/5</td>
+                                                    
+                                                    
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 300</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="small"><a href="#">Sales Team</a></td>
+                                                    <td class="small">Manager name</td>
+                                                    
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Team Value 1</span></td></td>
+
+                                                    <td class="small">3.4/5</td>
+                                                    
+                                                    
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 300</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- .table-responsive -->
+
+                                        </div>
+                                    </div>
+
+
+                                   
 
                                 </div>
                                 <!-- end timeline content-->
@@ -770,7 +956,7 @@
                                             <div class="btn-group mb-3 float-right">
                                                 <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#">Gift</a>
+                                                    <a class="dropdown-item" href="#">Benefit</a>
                                                     <a class="dropdown-item" href="#">Reward</a>
                                                     <a class="dropdown-item" href="#">Incentive</a>
                                                 </div>
@@ -781,13 +967,13 @@
                                             <div class="row">
 
                                             <div class="col-sm-12 col-lg-4 mb-3" data-isotope-item="" data-category="Branding">
-                                                <a href="#">
+                                                <a href="/admin/asosr">
                                                   <img src="/template-assets/images/products/asos.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
                                                   <div class="media mt-3">
-                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/louise.jpg" alt="Generic placeholder image">
                                                       <div class="media-body">
                                                           <h5 class="m-0">£50 Asos Giftcard</h5>
-                                                          <p class="mt-1 text-muted small"><i class="fe-award"></i> Rewarded by Paul Schulz</p>
+                                                          <p class="mt-1 text-muted small"><i class="fe-award"></i> Rewarded by Louise Jones</p>
                                                       </div>
                                                   </div>
                                                 </a>
@@ -799,10 +985,10 @@
                                                 <a href="#">
                                                   <img src="/template-assets/images/products/50credits.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
                                                   <div class="media mt-3">
-                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/louise.jpg" alt="Generic placeholder image">
                                                       <div class="media-body">
                                                           <h5 class="m-0">50 Credits</h5>
-                                                          <p class="mt-1 text-muted small">Gifted by Paul Schulz</p>
+                                                          <p class="mt-1 text-muted small">Company benefit by Louise Jones</p>
                                                       </div>
                                                   </div>
                                                 </a>
@@ -813,23 +999,23 @@
                                                 <a href="#">
                                                   <img src="/template-assets/images/products/teamlunch.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
                                                   <div class="media mt-3">
-                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/louise.jpg" alt="Generic placeholder image">
                                                       <div class="media-body">
                                                           <h5 class="m-0">Team Lunch</h5>
-                                                          <p class="mt-1 text-muted small"><i class="fe-lock"></i> Incentive from Paul Schulz</p>
+                                                          <p class="mt-1 text-muted small"><i class="fe-lock"></i> Incentive from Louise Jone</p>
                                                       </div>
                                                   </div>
                                                 </a>
                                               </div>
 
                                               <div class="col-sm-12 col-lg-4 mb-4" data-isotope-item="" data-category="Branding">
-                                                <a href="#">
+                                                <a href="/admin/starts">
                                                   <img src="/template-assets/images/products/1030starts.jpg" alt="Volkswagen Australia" class="img-fluid rounded mb-0 border">
                                                   <div class="media mt-3">
-                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                                      <img class="mr-2 avatar-xs rounded-circle" src="/template-assets/images/users/louise.jpg" alt="Generic placeholder image">
                                                       <div class="media-body">
                                                           <h5 class="m-0">10:30 starts</h5>
-                                                          <p class="mt-1 text-muted small">Gifted by Paul Schulz</p>
+                                                          <p class="mt-1 text-muted small">Company benefit from Louise Jones</p>
                                                       </div>
                                                   </div>
                                                 </a>
@@ -856,17 +1042,17 @@
                                     
                                     <img src="/template-assets/images/blob.png" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
-                                    <h4 class="mb-2">Team Name</h4>
+                                    <h4 class="mb-2">Company Name</h4>
 
-                                    <p class="/admin/wallet" class="mt-0"><i class="fa fa-diamond" aria-hidden="true"></i> 3000 Team Credits</p>
+                                    <p class="/admin/wallet" class="mt-0"><i class="fa fa-diamond" aria-hidden="true"></i> 3000 Company Credits</p>
 
                                     <ul class="social-list list-inline mt-3 mb-0">
-                                        <a href="#" class="btn btn-warning">View team wallet</a>
+                                        <a href="/admin/walletteam" class="btn btn-warning">View company wallet</a>
                                     </ul>
 
 
                                     <ul class="social-list list-inline mt-3 mb-0">
-                                        <a href="#" class="btn btn-light">Edit team settings</a>
+                                        <a href="/admin/editcompany" class="btn btn-light">Edit company settings</a>
                                     </ul>
 
                                 </div> <!-- end front panel -->

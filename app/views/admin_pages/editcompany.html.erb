@@ -1,0 +1,175 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="wrapper">
+            <div class="container">
+
+                <ol class="breadcrumb" style="margin-bottom: -10px;">
+                    <li class="breadcrumb-item"><a href="/admin/managecompany">Company name</a></li>
+                    <li class="breadcrumb-item active">Edit company details</li>
+                </ol>
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box mt-0">
+                            <h4 class="page-title">Edit company details</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    
+
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card-box">
+                            <ul class="nav nav-tabs nav-bordered">
+                                <li class="nav-item">
+                                    <a href="#aboutme1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                        Details
+                                    </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a href="#aboutme" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        Team Values
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#timeline" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        Integrations
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#timeline" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                        Billing
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="aboutme1">
+
+                                    <form role="form" class="parsley-examples" novalidate="">
+                                        <h5 class="mb-4 text-uppercase">Company Info</h5>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-2 col-form-label">Company Name<span class="text-danger">*</span></label>
+                                            <div class="col-4">
+                                                <input type="text" class="form-control" id="firstname" value="Company Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-2 col-form-label">Company branding<span class="text-danger">*</span></label>
+                                        </div>
+                                    </form>
+
+
+                                </div> <!-- end tab-pane -->
+                                <!-- end about me section content -->
+
+                                <div class="tab-pane" id="aboutme">
+
+                                    <h5 class="mb-4 text-uppercase">
+                                        Company Values</h5>
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-xl-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Above & beyond</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">Zero Fear</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3">Family not a job</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label" for="customCheck4">Get it done</label>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-xl-6">
+                                                
+                                                    <div class="text-right">
+                                                        <button type="submit" class="btn btn-light mt-2">Cancel</button>
+                                                        <button type="submit" class="btn btn-warning mt-2">Save</button>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                        </div>
+                                        </div> <!-- end col-->
+
+
+                                    </div>
+
+                                </div> <!-- end tab-pane -->
+                                <!-- end about me section content -->
+
+                                <div class="tab-pane" id="timeline">
+
+                                    <h5 class="mb-4 text-uppercase">
+                                        Integrations</h5>
+
+                                    
+                                                
+                                        </div>
+                                        </div> <!-- end col-->
+
+
+                                    </div>
+
+                                </div>
+                                <!-- end timeline content-->
+
+                                
+
+                            </div> <!-- end tab-content -->
+                        </div> <!-- end card-box-->
+
+                    </div> <!-- end col -->
+
+
+                </div>
+                <!-- end row-->
+                
+
+                        
+
+                    </div> <!-- end col-->
+                
+            </div> <!-- end container -->
+       </div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/autocomplete/jquery.autocomplete.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<% end %>
