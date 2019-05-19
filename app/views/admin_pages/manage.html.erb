@@ -438,13 +438,13 @@
 
 
 
-                                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
-                                <div class="modal-dialog modal-md">
+                                 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="card">
                                             <div class="card-body">
                                                 <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h3 class="mb-4 text-center"> Gift</h3>
+                                                <h3 class="mb-4 text-center"> Give</h3>
 
                                                 <form>
                                                     <div id="basicwizard">
@@ -469,14 +469,15 @@
 
                                                         <div class="tab-content b-0 mb-0">
                                                             <div class="tab-pane active" id="basictab1">
+                                                                <h4 class="mt-2 mb-4 text-center">What would you like to give?</h4>
                                                                 <div class="row mt-0">
                                                                     <div class="col-4">
                                                                         <a href="#" class="card p-3 outline">
                                                                         <div class="row">
                                                                             <div class="col-12">
                                                                                 <div class="text-center">
-                                                                                    <h5 class="text-dark my-1">Create<br></h5>
-                                                                                    <p class="text-muted mb-1 small">Unique gift from scratch</p>
+                                                                                    <h3 class="text-dark my-1">Gift<br></h3>
+                                                                                    <p class="text-muted mb-1 small mt-3">A days holiday, a late start. Show you're listening and that you really care.</p>
                                                                                 </div>
                                                                             </div>
                                                                           </div> <!-- end row-->
@@ -487,9 +488,10 @@
                                                                         <div class="row">
                                                                             <div class="col-12">
                                                                                 <div class="text-center">
-                                                                                    <h5 class="text-dark my-1">
-                                                                                    Credit</h5>
-                                                                                    <p class="text-muted mb-1 small">Purchase or send credit</p>
+                                                                                    <h3 class="text-dark my-1">
+                                                                                    Reward</h3>
+                                                                                    <p class="text-muted mb-1 small mt-3">Celebrate top performers that truly embody your company values.</p>
+                                                                                    <br>
                                                                                 </div>
                                                                             </div>
                                                                           </div> <!-- end row-->
@@ -500,8 +502,9 @@
                                                                         <div class="row">
                                                                             <div class="col-12">
                                                                                 <div class="text-center">
-                                                                                    <h5 class="text-dark my-1">Collections</h5>
-                                                                                    <p class="text-muted mb-1 small">Choose from collections</p>
+                                                                                    <h3 class="text-dark my-1">Incentive</h3>
+                                                                                    <p class="text-muted mb-1 small mt-3">Drive the behaviours you want inline with your company values</p>
+                                                                                    <br>
                                                                                 </div>
                                                                             </div>
                                                                           </div> <!-- end row-->
@@ -547,7 +550,7 @@
                                                                         <div class="text-center">
                                                                             <h4 class="mt-2 mb-4 text-center">Here's your summary</h4>
 
-                                                                            <p class="w-75 mb-4 mx-auto"><i>"Here's a message that has been created to accompany the gift. The why etc"</i></p>
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"Here's a message that has been created to accompany the thing that has been given. Explaining the why etc"</i></p>
                                                                         </div>
 
                                                                         <div class="row justify-content-md-center">
@@ -598,136 +601,179 @@
                                                             <label class="custom-control-label" for="customCheck10"></label>
                                                         </div>
                                                     </th>
+                                                    <th></th>
                                                     <th>Name</th>
+                                                    <th>Team</th>
                                                     <th>Values</th>
                                                     <th>Credit</th>
-                                                    
+                                                    <th>Action</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                                            <label class="custom-control-label" for="customCheck12"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-5.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Adam Smith</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="/admin/profilemanager" class="small">Adam Smith</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
-                                                            </div>
+                                                            <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                         </div>
 
                                                     </td>
+
                                                 </tr>
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                                                            <label class="custom-control-label" for="customCheck13"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Bill Hewitt</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Learning & Development</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/bill.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Bill Hewitt</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                    
+
                                                 </tr>
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                            <label class="custom-control-label" for="customCheck4"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-3.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Chris Camacho</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Chris Camacho</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                    
+
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                            <label class="custom-control-label" for="customCheck5"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-8.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Emily Jane</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-1.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Emily Jane</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg1">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                    
+
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                            <label class="custom-control-label" for="customCheck6"></label>
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                            <label class="custom-control-label" for="customCheck15"></label>
                                                         </div>
                                                     </td>
-                                                    <td><img src="/template-assets/images/users/user-2.jpg" class="rounded-circle avatar-xs mr-2" alt="friend"><a href="#">Hannah Smith</a></td>
-                                                    <td style="width: 36px;"><span class="badge badge-light badge-pill lg">Work-Life Balance</span></td>
-                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 112</td>
+                                                    <td style="width: 36px;">
+                                                        <img src="/template-assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-xs">
+                                                    </td>
+
                                                     <td>
-                                                        <a href="javascript: void(0);" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Give shoutout"><i class="mdi mdi-bullhorn"></i></a>
+                                                        <a href="#" class="small">Hannah Smith</a>
+                                                        <p class="mb-0 text-muted"><small>UK</small></p>
+                                                    </td>
+
+                                                    <td class="small">Product</td>
+                                                    <td class="small"><span class="badge badge-light badge-pill lg">Work Life Balance</span></td>
+
+                                                    <td class="small"><i class="fa fa-diamond" aria-hidden="true"></i> 132</td>
+                                                    <td>
+                                                        <a href="javascript: void(0);" class="btn btn-light btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shoutout"><i class="mdi mdi-bullhorn"></i></a>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
-                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Gift</a>
-                                                                <a class="dropdown-item" href="#">Reward</a>
-                                                                <a class="dropdown-item" href="#">Incentive</a>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-light dropdown-toggle btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                             </div>
                                                         </div>
 
                                                     </td>
-                                                   
+
                                                 </tr>
 
                                             </tbody>
                                         </table>
-                                    </div> <!-- .table-responsive -->
+                                    </div>
                                 </div> <!-- end collapse-->
 
                                     
@@ -768,7 +814,7 @@
 
 
                                             <div class="btn-group mb-3 float-right">
-                                                <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Create <i class="mdi mdi-chevron-down"></i></button>
+                                                <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give <i class=" mdi mdi-dots-horizontal"></i></button>
                                                 <div class="dropdown-menu dropdown-menu-right">
                                                     <a class="dropdown-item" href="#">Gift</a>
                                                     <a class="dropdown-item" href="#">Reward</a>
